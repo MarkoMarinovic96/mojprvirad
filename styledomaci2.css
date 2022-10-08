@@ -1,0 +1,13 @@
+body{
+  background-color:aqua;
+}
+form {
+ text-align: center;
+ margin: auto;
+ border: 1px;
+ width: 33%;
+ height: auto;
+}
+input:hover {
+  background-color: lightblue;
+}
