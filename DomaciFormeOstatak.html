@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ostatak formi Zadaca" />
+    <meta name="authoe" content="Marko Marinovic" />
+    <title>Forme ostatak</title>
+  </head>
+  <body>
+    <form
+      action="#"
+      method="get"
+      oninput="izracun.value=parseInt(novaca.value)/parseInt(ukucan.value)"
+    >
+      <fieldset>
+        <legend>Bitna stavka 1:</legend>
+        <label for="polje">Unesite opis:</label><br />
+        <textarea id="polje" name="polje" row="10" cols="20">
+Pocnite pisati...
+    </textarea
+        ><br />
+        <button id="button" onclick="alert('Stisnuo si gumb.Bravo!')">
+          Klikni me!
+        </button>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Bitna stavka 2:</legend>
+        <label for="klubovi">Odaberite Hrvatske gradove</label>
+        <input list="klubovi" />
+        <datalist id="klubovi">
+          <option value="Zagreb"></option>
+          <option value="Split"></option>
+          <option value="Rijeka"></option>
+          <option value="Šibenik"></option>
+          <option value="Zadar"></option></datalist
+        ><br />
+        <hr />
+        <label for="izracun"
+          >Izracun koliko svaki član obitelji dobije novaca </label
+        ><br />
+        <label for="novaca">Unesite koliko imate novaca:</label><br />
+        <input type="number" name="novaca" id="novaca" /><br />
+        <label for="ukucan">Koliko je članova kucanstva:</label><br />
+        <input type="number" name="ukucan" id="ukucan" /><br />
+        <p><output name="izracun" for="ukucani novaca">0</output>kn</p>
+      </fieldset>
+      <fieldset > 
+        <legend>Bitna stavka 3:</legend>
+        <label for="odjobc">Odaberite marku odjece i obuce(za više izbora Ctrl + click na opciju):</label><br>
+        <select name="odjobc" id="odjobc" multiple>
+          <optgroup label="Odjeca">
+            <option value="adidas">Adidas</option>
+            <option value="nike">Nike</option>
+            <option value="reebok">Reebok</option>
+          </optgroup>
+          <optgroup label="Obuca">
+            <option value="newbalanc">New Balance</option>
+            <option value="nikeobc">Nike</option>
+          </optgroup>
+        </select>
+      </fieldset><br>
+      <input type="submit" name="submit" id="submit">
+    </form>
+  </body>
+</html>

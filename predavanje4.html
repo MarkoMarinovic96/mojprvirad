@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Predavanje 4</title>
+  </head>
+  <body>
+<!--Multimedija-grafika-->
+<img src="https://thumbs.dreamstime.com/b/happy-student-thumbs-up-classroom-looking-you-classmates-background-96531919.jpg"  alt="">
+<img src="./Happystudent.jpg" alt="">
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Forme -->
+    <form
+      action="#"
+      method="get"
+      oninput="bonus.value=parseInt(placa.value)*0.20"
+    >
+      <label for="post">Unesite sasdrzaj svog post</label><br />
+      <textarea name="post" rows="10" cols="10">Upisite poruku</textarea>
+      <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+      <fieldset>
+        <legend>Personalia:</legend>
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" value="John" /><br />
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+      <br /><br />
+      <label for="polaznici">Odaberite polaznike sa liste</label>
+      <input list="polaznici" name="polaznici" />
+      <datalist id="polaznici">
+        <option value="Miščević"></option>
+        <option value="Blazić"></option>
+        <option value="Validžić"></option>
+        <option value="Lenzovich"></option>
+        <option value="Kukulj"></option>
+      </datalist>
+
+      <br /><br />
+      <label for="placa">Unesite željenu godišnju placu</label>
+      <input
+        type="range"
+        name="placa"
+        id="placa"
+        min="10000"
+        max="100000"
+      /><br />
+      <label for="bonus">Željeni bonus</label>
+      <output for="bonus" name="bonus">2000</output>
+    </form>
+  </body>
+</html>
