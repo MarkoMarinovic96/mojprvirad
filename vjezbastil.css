@@ -4,8 +4,19 @@
   padding: 0;
 
 }
+img{
+ border:3px  solid black;
+margin-top: 20px;}
+#link{color: white;}
+form{
+  margin-top: 75px;
+}
 body {
-  background-color:lightskyblue;
+  background-image: url(./mULTIMEDIJA/1-2.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size:cover;
+  color: white;
   font: 200;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -69,13 +80,12 @@ section#znamentosti{
 }
 #znamenitosti>ul>li>a{
   display: block;
-  color: black;
+  color:white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 #znamenitosti>ul>li>a:hover{
-  background-color: lightskyblue;
   opacity: 0.3;
 }
 footer{
@@ -101,8 +111,11 @@ footer>ul>li#btn{
 
   footer>ul>li>a{
     display: block;
-    color: black;
+    color:white;
     text-align: center;
    
     text-decoration: none;
+  }
+  footer>ul>li>a:hover{
+    opacity: 0.3;
   }
