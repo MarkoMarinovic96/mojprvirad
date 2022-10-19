@@ -1,0 +1,108 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+body {
+  background-color:lightskyblue;
+  font: 200;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#header{
+  text-align: center;
+}
+#navigac {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+#navigac>li {
+  display: inline-block;
+}
+#navigac>li>a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navigac>li> a:hover{
+  background-color: #111;
+}
+
+h1{
+  font-weight: 700;
+  font-size: 40px;
+}
+section#onama{
+  width: 70%;
+  float: left;
+  text-align:left;
+  padding: 10px;
+
+}
+aside{
+  width: 25%;
+  float: right;
+}
+section#znamentosti{
+  width: 100%;
+  float: left;
+  display: block;
+  padding: 10px;
+}
+#znamenitosti>ul{
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+#znamenitosti>ul>li{
+  float: left;
+  width: 33%;
+}
+#znamenitosti>ul>li>a{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+#znamenitosti>ul>li>a:hover{
+  background-color: lightskyblue;
+  opacity: 0.3;
+}
+footer{
+  width: 100%;
+}
+footer>ul{
+  
+  width: 100%;
+  list-style-type: none;
+  padding: 15px;
+  
+}
+footer>ul>li{
+  float: left;
+  width: 30%;
+  text-align:center;
+
+}
+footer>ul>li#btn{
+  float: right;
+  text-align:center;}
+ 
+
+  footer>ul>li>a{
+    display: block;
+    color: black;
+    text-align: center;
+   
+    text-decoration: none;
+  }
