@@ -11,16 +11,24 @@
     <header id="head">
       <h1>Turistička agencija "Avanturist"</h1>
       <nav>
-        <ul>
+        <ul id="nav">
           <li><a href="#onama">O nama</a></li>
           <li><a href="#djelatnosti">Djelatnosti</a></li>
           <li><a href="#kontakt">Kontakt</a></li>
         </ul>
       </nav>
     </header>
-    <hr />
+   
     <main>
-      <h1>Glavni sadržaj</h1>
+      <br>
+      <div class="dropdown">
+      <button class="gumb">Top Putovanja</button>
+      <div class="dropdown-content">
+        <a href="#">Grcka</a>
+        <a href="#">Egipat</a>
+        <a href="#">Turska</a>
+      </div>
+      </div>
       <section id="onama">
         <h3>O nama</h3>
         <p>
@@ -51,7 +59,7 @@
         </p>
         <form action="server" method="get">
           <label for="podatci">Ime i prezime:</label><br />
-          <input type="text" name="podatci" id="podatci" required /><br />
+          <input type="text" name="podatci" id="podatci" required class="ime" /><br />
           <label for="email">Unesite email:</label><br />
           <input
             type="email"

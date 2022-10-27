@@ -7,8 +7,11 @@ body{
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
   background-color:rgb(17, 17, 85);
-  background-image: radial-gradient(rgb(82, 82, 233), rgb(50, 50, 167),rgb(113, 113, 172));
-  color: azure;
+  background-image:url(./girlgoneabroad.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
 }
 h1,h3{
   color: rgb(189, 215, 215);
@@ -29,21 +32,18 @@ li{
   margin: 10px;
   border: 10px;
 }
-a{
+ul#nav>li>a{
   text-decoration: none;
   color: azure;
 }
-a:hover{
+ul#nav>li>a:hover{
   color: black;
   font-size: 26px;
   transition:0.1s;
   opacity: 0.5;
 }
 section#djelatnosti{
-  background-image: url(./adventure.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size:cover;
+  
   height: 400px;
   text-align: center;
   margin: auto;
@@ -52,3 +52,41 @@ p{
   margin-top: 50px;
   font: 20px;
 }
+.gumb {
+  background-color: #0478aa;
+  color: white;
+  border-radius: 10px;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  justify-content: center;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #077cb6;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px #0478aa;
+  
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: rgb(7, 60, 87);}
+
+.dropdown:hover .dropdown-content {display: block;
+}
+
+.dropdown:hover .gumb {background-color: #0478aa;
+opacity: 0.5;}
